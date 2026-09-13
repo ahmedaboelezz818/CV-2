@@ -95,10 +95,16 @@ h3 {
     padding: 15px;
     width: 250px;
     background-color: var(--card-bg);
-    margin: 5px;
+    margin: 0px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+    
+    /* التعديلات المطلوبة هنا */
     position: sticky;
+    top: 20px;                 /* المسافة اللي هيقف عندها من فوق الشاشة وقت الـ Scroll */
+    align-self: flex-start;    /* بيمنع الـ bar إنه يتمدد بطول الصفحة ويخليه يحتفظ بطوله الطبيعي */
+    /* max-height: calc(100vh - 40px); لو محتوى الـ bar أطول من الشاشة، يعمل Scroll داخلي لوحده */
+    /* overflow-y: auto; */
 }
 
 .container .bar .head {
